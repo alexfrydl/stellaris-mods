@@ -1,0 +1,41 @@
+STELLARIS_PATH := "/mnt/c/Program Files (x86)/Steam/steamapps/common/Stellaris"
+RELEVANT_DIRECTORIES := "{common,events,map,prescripted_countries}"
+
+import-vanilla-file file:
+  #!/bin/fish
+
+  echo "Importing {{file}}…"
+  mkdir -p $(dirname "{{file}}")
+  cp "{{STELLARIS_PATH}}/{{file}}" "{{file}}"
+
+import-vanilla-files base="HEAD":
+  #!/bin/fish
+
+  # if test (git branch --show-current) != "vanilla"
+  #   echo "This task is for the vanilla branch only."
+  #   exit 1
+  # end
+
+  set -l files (git ls-tree -r --name-only "{{base}}" {{RELEVANT_DIRECTORIES}})
+
+  for file in $files
+    if test -f "{{STELLARIS_PATH}}/$file"
+      echo "Importing $file…"
+      mkdir -p (dirname "$file")
+      cp "{{STELLARIS_PATH}}/$file" $file
+    end
+  end
+
+  git add -A {{RELEVANT_DIRECTORIES}}
+
+reimport-vanilla-files base="HEAD":
+  #!/bin/fish
+
+  if test (git branch --show-current) != "vanilla"
+    echo "This task is for the vanilla branch only."
+    exit 1
+  end
+
+  rm -rf {{RELEVANT_DIRECTORIES}}
+
+  just import-vanilla-files {{base}}
