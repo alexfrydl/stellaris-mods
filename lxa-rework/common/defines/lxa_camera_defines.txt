@@ -1,3 +1,0 @@
-NCamera = {
-	LEAVE_SYSTEM_ZOOM_STEP = 3
-}
