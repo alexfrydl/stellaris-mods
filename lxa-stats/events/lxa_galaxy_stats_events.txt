@@ -1,0 +1,27 @@
+namespace = lxa_galaxy_stats
+
+# Fired at the start of the game.
+country_event = {
+	id = lxa_galaxy_stats.1
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		set_variable = { which = stat_planets value = 0 }
+		set_variable = { which = stat_pops value = 0 }
+
+		every_galaxy_planet = {
+			limit = { is_colonizable = yes }
+
+			root = {
+				change_variable = { which = stat_planets value = 1 }
+				change_variable = { which = stat_pops value = trigger:prev.num_pops }
+			}
+		}
+
+		log = "<LXA> start: [This.stat_planets],[This.stat_pops]"
+
+		clear_variable = stat_planets
+		clear_variable = stat_pops
+	}
+}

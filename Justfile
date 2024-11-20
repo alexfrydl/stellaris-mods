@@ -11,8 +11,8 @@ ready:
 
     echo "Copying $name…"
 
-    rm -rf "{{mod_path}}/$name"*
+    rm -rf "{{mod_path}}/$name" "{{mod_path}}/$name.mod"
     cp -r "$name" "{{mod_path}}"
     cp -f "$descriptor" "{{mod_path}}/$name.mod"
-    echo "\npath=\"{{mod_path_win}}/$name\"" >> "{{mod_path}}/$name.mod"
+    echo \n"path=\"{{mod_path_win}}/$name\"" >> "{{mod_path}}/$name.mod"
   end
