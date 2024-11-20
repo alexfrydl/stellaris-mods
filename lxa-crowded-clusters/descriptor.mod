@@ -4,5 +4,5 @@ tags={
 }
 picture="thumbnail.png"
 name="Crowded Starting Clusters"
-supported_version="3.14.*"
+supported_version="v3.14.*"
 remote_file_id="3084622758"
