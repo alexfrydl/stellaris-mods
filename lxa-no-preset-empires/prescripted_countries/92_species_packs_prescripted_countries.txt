@@ -4,7 +4,7 @@
 maweer = {
 	name = "EMPIRE_DESIGN_maweer"
 	ship_prefix = "PRESCRIPTED_ship_prefix_maweer"
-	spawn_enabled = yes
+	spawn_enabled = no
 	ignore_portrait_duplication = yes
 
 	playable = has_plantoids # scripted_triggers
@@ -76,7 +76,7 @@ maweer = {
 khennet = {
 	name = "EMPIRE_DESIGN_khennet"
 	ship_prefix = "PRESCRIPTED_ship_prefix_khennet"
-	spawn_enabled = yes
+	spawn_enabled = no
 	ignore_portrait_duplication = yes
 
 	playable = has_lithoids #scripted_triggers
@@ -148,7 +148,7 @@ khennet = {
 pasharti = {
 	name = "EMPIRE_DESIGN_pasharti"
 	ship_prefix = "PRESCRIPTED_ship_prefix_pasharti"
-	spawn_enabled = yes
+	spawn_enabled = no
 	ignore_portrait_duplication = yes
 
 	playable = has_necroids #scripted_triggers
@@ -231,7 +231,7 @@ pasharti = {
 sathyrel = {
 	name = "EMPIRE_DESIGN_sathyrel"
 	ship_prefix = "PRESCRIPTED_ship_prefix_sathyrel"
-	spawn_enabled = yes
+	spawn_enabled = no
 	ignore_portrait_duplication = yes
 
 	playable = has_aquatics #scripted_triggers
@@ -357,7 +357,7 @@ gorthikan = {
 	spawn_as_fallen = no
 	ignore_portrait_duplication = no
 	room = "toxoids_room"
-	spawn_enabled = yes
+	spawn_enabled = no
 	ethic = "ethic_fanatic_egalitarian"
 	ethic = "ethic_materialist"
 	civics = {
@@ -430,7 +430,7 @@ knights = {
 	spawn_as_fallen = no
 	ignore_portrait_duplication = no
 	room = "personality_honorbound_warriors_room"
-	spawn_enabled = yes
+	spawn_enabled = no
 	ethic = "ethic_authoritarian"
 	ethic = "ethic_militarist"
 	ethic = "ethic_spiritualist"

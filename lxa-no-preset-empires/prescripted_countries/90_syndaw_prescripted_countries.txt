@@ -2,7 +2,7 @@
 tebrid = {
 	name = "EMPIRE_DESIGN_tebrid"
 	adjective = "PRESCRIPTED_adjective_tebrid"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
 	playable = has_synthetic_dawn_not_machine_age # scripted_triggers
@@ -167,7 +167,7 @@ custodianship = {
 xt489 = {
 	name = "EMPIRE_DESIGN_xt489"
 	adjective = "PRESCRIPTED_adjective_xt489"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
 	playable = has_synthetic_dawn_not_machine_age # scripted_triggers
@@ -239,7 +239,7 @@ xt489 = {
 tebrid_machine_age = {
 	name = "EMPIRE_DESIGN_tebrid"
 	adjective = "PRESCRIPTED_adjective_tebrid"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
 	playable = has_synthetic_dawn_and_machine_age # scripted_triggers
@@ -406,7 +406,7 @@ custodianship_machine_age = {
 xt489_machine_age = {
 	name = "EMPIRE_DESIGN_xt489"
 	adjective = "PRESCRIPTED_adjective_xt489"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 	ignore_portrait_duplication = yes
 
 	playable = has_synthetic_dawn_and_machine_age # scripted_triggers

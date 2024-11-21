@@ -2,7 +2,7 @@
 tzynn = {
 	name = "EMPIRE_DESIGN_tzynn"
 	adjective = "PRESCRIPTED_adjective_tzynn"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 
 	ship_prefix = "PRESCRIPTED_ship_prefix_tzynn"
 
@@ -69,7 +69,7 @@ tzynn = {
 yondar = {
 	name = "EMPIRE_DESIGN_yondar"
 	adjective = "PRESCRIPTED_adjective_yondar"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 
 	species = {
 		class = "AVI"
@@ -134,7 +134,7 @@ yondar = {
 iferyx = {
 	name = "EMPIRE_DESIGN_iferyx"
 	adjective = "PRESCRIPTED_adjective_iferyx"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 
 	playable = has_not_megacorp
 
@@ -202,7 +202,7 @@ iferyx = {
 glebsig = {
 	name = "EMPIRE_DESIGN_glebsig"
 	adjective = "PRESCRIPTED_adjective_glebsig"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 	spawn_as_fallen = yes # overrides spawn_enabled for fallen empires
 
 	ship_prefix = "PRESCRIPTED_ship_prefix_glebsig"
@@ -265,7 +265,7 @@ glebsig = {
 jehetma = {
 	name = "EMPIRE_DESIGN_jehetma"
 	adjective = "PRESCRIPTED_adjective_jehetma"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 
 	species = {
 		class = "FUN"
@@ -333,7 +333,7 @@ jehetma = {
 scyldari = {
 	name = "EMPIRE_DESIGN_scyldari"
 	adjective = "PRESCRIPTED_adjective_scyldari"
-	spawn_enabled = yes # yes / no / always
+	spawn_enabled = no # yes / no / always
 
 	species = {
 		class = "MAM"
@@ -400,7 +400,7 @@ scyldari = {
 kel_azaan = {
 	name = "EMPIRE_DESIGN_kel_azaan"
 	adjective = "PRESCRIPTED_adjective_kel_azaan"
-	spawn_enabled = yes
+	spawn_enabled = no
 
 	species = {
 		class = "ART"

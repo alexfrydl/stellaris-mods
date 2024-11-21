@@ -6,7 +6,7 @@
 oviron_lodge = {
 	name = EMPIRE_DESIGN_oviron_lodge
 	adjective = PRESCRIPTED_adjective_oviron_lodge
-	spawn_enabled = yes
+	spawn_enabled = no
 	ignore_portrait_duplication = no
 
 	playable = has_grand_archive_dlc
@@ -82,7 +82,7 @@ oviron_lodge = {
 graparx_trophy_hunters = {
 	name = EMPIRE_DESIGN_graparx_trophy_hunters
 	adjective = PRESCRIPTED_adjective_graparx_trophy_hunters
-	spawn_enabled = yes
+	spawn_enabled = no
 	ignore_portrait_duplication = no
 
 	playable = has_grand_archive_dlc
