@@ -18,7 +18,7 @@ setup_scenario = {
 	cluster_count = {
 		method = one_every_x_empire
 		#method = constant
-		value = 6
+		value = 2
 		max = 6
 	}
 	cluster_radius = 150

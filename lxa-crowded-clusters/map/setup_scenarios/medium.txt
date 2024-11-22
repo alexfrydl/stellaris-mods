@@ -19,8 +19,8 @@ setup_scenario = {
 	cluster_count = {
 		method = one_every_x_empire
 		#method = constant
-		value = 4
-		max = 6
+		value = 2
+		max = 4
 	}
 	cluster_radius = 120
 	cluster_distance_from_core = 250
