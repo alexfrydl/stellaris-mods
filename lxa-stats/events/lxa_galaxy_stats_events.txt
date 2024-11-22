@@ -11,11 +11,11 @@ country_event = {
 		set_variable = { which = stat_pops value = 0 }
 
 		every_galaxy_planet = {
-			limit = { is_colonizable = yes }
+			limit = { colonizable_planet = yes }
 
 			root = {
 				change_variable = { which = stat_planets value = 1 }
-				change_variable = { which = stat_pops value = trigger:prev.num_pops }
+				change_variable = { which = stat_pops value = prev.trigger:num_pops }
 			}
 		}
 
