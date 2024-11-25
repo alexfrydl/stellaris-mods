@@ -49,7 +49,7 @@ country_event = {
 	picture = GFX_evt_atmospheric_entry
 	show_sound = event_mystic_reveal
 
-	mean_time_to_happen = { months = 600 }
+	is_triggered_only = yes
 
 	trigger = {
 		is_country_type = default
