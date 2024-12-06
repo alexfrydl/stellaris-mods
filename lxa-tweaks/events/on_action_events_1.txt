@@ -3601,98 +3601,7 @@ country_event = {
 # Primitive Medieval Civilization Encountered
 country_event = {
 	id = action.5
-	title = "action.5.name"
-	picture = {
-		trigger = { event_target:primitive_civ = { is_gestalt = no } }
-		picture = GFX_evt_medieval_alien_civilization
-	}
-	picture = {
-		trigger = { event_target:primitive_civ = { is_gestalt = yes } }
-		picture = GFX_evt_hive_mind_pre_ftl
-	}
-	location = FROMFROM
-	show_sound = event_pre_ftl_civilization
-
-	desc = { # Stone Age Regular
-		text = action.5.desc_00
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = stone_age
-				is_gestalt = no
-			}
-		}
-	}
-	desc = { # Stone Age Hive
-		text = action.5.desc_00_hive
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = stone_age
-				is_gestalt = yes
-			}
-		}
-	}
-	desc = { # Bronze Age Regular
-		text = action.5.desc_01
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = bronze_age
-				is_gestalt = no
-			}
-		}
-	}
-	desc = { # Bronze Age Hive
-		text = action.5.desc_01_hive
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = bronze_age
-				is_gestalt = yes
-			}
-		}
-	}
-	desc = { # Iron Age Regular
-		text = action.5.desc_02
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = iron_age
-				is_gestalt = no
-			}
-		}
-	}
-	desc = { # Iron Age Hive
-		text = action.5.desc_02_hive
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = iron_age
-				is_gestalt = yes
-			}
-		}
-	}
-	desc = { # Late Medieval Regular
-		text = action.5.desc_03
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = late_medieval_age
-				is_gestalt = no
-			}
-		}
-	}
-	desc = { # Late Medieval Hive
-		text = action.5.desc_03_hive
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = late_medieval_age
-				is_gestalt = yes
-			}
-		}
-	}
-	desc = { # Renaissance
-		text = action.5.desc_04
-		trigger = { event_target:primitive_civ = { has_country_flag = renaissance_age } }
-	}
-	desc = { # Steam Age
-		text = action.5.desc_05
-		trigger = { event_target:primitive_civ = { has_country_flag = steam_age } }
-	}
+	hide_window = yes
 
 	is_triggered_only = yes
 
@@ -3727,71 +3636,15 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = INTERESTING
-		hidden_effect = { country_event = { id = story.6 days = 30 } }
+	immediate = {
+		country_event = { id = story.6 days = 30 }
 	}
 }
 
 # Primitive Industrial Civilization Encountered
 country_event = {
 	id = action.6
-	title = "action.5.name"
-	picture = {
-		trigger = { event_target:primitive_civ = { is_gestalt = no } }
-		picture = GFX_evt_metropolis
-	}
-	picture = {
-		trigger = { event_target:primitive_civ = { is_gestalt = yes } }
-		picture = GFX_evt_hive_mind_pre_ftl
-	}
-	location = FROMFROM
-	show_sound = event_scanner
-
-	desc = { # Industrial Age
-		text = action.6.desc_01
-		trigger = { event_target:primitive_civ = { has_country_flag = industrial_age } }
-	}
-	desc = { # Machine Age
-		text = action.6.desc_02
-		trigger = { event_target:primitive_civ = { has_country_flag = machine_age } }
-	}
-	desc = { # Atomic Age
-		text = action.6.desc_03
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = atomic_age
-				is_gestalt = no
-			}
-		}
-	}
-	desc = { # Atomic Age
-		text = action.6.desc_03_hive
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = atomic_age
-				is_gestalt = yes
-			}
-		}
-	}
-	desc = { # Early Space Age
-		text = action.6.desc_04
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = early_space_age
-				is_gestalt = no
-			}
-		}
-	}
-	desc = { # Early Space Age
-		text = action.6.desc_04_hive
-		trigger = {
-			event_target:primitive_civ = {
-				has_country_flag = early_space_age
-				is_gestalt = yes
-			}
-		}
-	}
+	hide_window = yes
 
 	is_triggered_only = yes
 
@@ -3823,9 +3676,8 @@ country_event = {
 		}
 	}
 
-	option = {
-		name = INTERESTING
-		hidden_effect = { country_event = { id = story.6 days = 30 } }
+	immediate = {
+		country_event = { id = story.6 days = 30 }
 	}
 }
 

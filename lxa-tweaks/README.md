@@ -7,3 +7,4 @@
   strategic resource of each type.
 * Removed event popups for early game progress such as the discovery of alien
   life or establishment of the first colony.
+* Removed the event popup when encountering each new pre-FTL civilization.
