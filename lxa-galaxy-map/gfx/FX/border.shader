@@ -187,7 +187,7 @@ PixelShader =
 					
 			float vAlphaMin = 0.65f + 0.35f * vCamDistFactor;
 			
-			float vEdgeWidth = 0.025f + 0.35f * vCamDistFactor;
+			float vEdgeWidth = 0.025f + 0.275f * vCamDistFactor;
 			const float vEdgeSharpness = 100.0f;			
 			float vBlackBorderWidth = vEdgeWidth * 0.25f;
 			const float vBlackBorderSharpness = 25.0f;
@@ -199,7 +199,7 @@ PixelShader =
 			//vAlphaFill is the soft gradient inside the blobs
 			float vAlphaFill = max( vAlphaMin, saturate( vMid + (vDist-0.25f + vEdgeWidth*1.0f)*2.0f ) * 0.75f );
 
-			float4 vColor = vAlphaEdge * PrimaryColor * float4(0.4, 0.4, 0.4, 1.0) + ( 1 - vAlphaEdge ) * PrimaryColor;
+			float4 vColor = vAlphaEdge * PrimaryColor / float4(3.0, 3.0, 3.0, 1.0) + ( 1 - vAlphaEdge ) * PrimaryColor;
 
 			//Add a black edge that becomes more visible the further away from the camera it is
 			vColor *= 1.0f - ( 0.25f * saturate( (vDist-vMid + vBlackBorderWidth)*vBlackBorderSharpness ) );
