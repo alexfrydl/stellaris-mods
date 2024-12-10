@@ -135,7 +135,7 @@ VertexShader =
 				0.114 * v.PrimaryColor[2];
 
 			Out.IncognitaLookup = v.Position.xz;
-			Out.PrimaryColor = float4(luminosity, luminosity, luminosity, v.PrimaryColor[3]);
+			Out.PrimaryColor = float4(luminosity, luminosity, luminosity, v.PrimaryColor[3] * 2.0 / 3.0);
 			Out.SecondaryColor = v.SecondaryColor;
 			Out.Access = v.Access;
 			Out.Visibility = v.Visibility;
